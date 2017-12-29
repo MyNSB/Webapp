@@ -143,6 +143,7 @@ a:visited {
 }
 
 #loginBox {
+    display: none;
     z-index: 1;
     background-color: #fff;
     height: 50vh;
@@ -153,6 +154,8 @@ a:visited {
     left: 0;
     right: 0;
     margin: auto;
+    padding-top: 50px;
+    box-sizing: border-box;
 }
 
 #innerBox {

@@ -8,7 +8,7 @@ var pages = ['dashboard.html', 'timetable.html', 'calendar.html', 'reminders.htm
 // Prompt the login session, collects details and sends it straight to the API
 function promptLogin() {
     $("#background").addClass("hidden");
-    $("#loginOverlay").addClass("showLogin");
+    $("#loginBox").addClass("showLogin");
 }
 
 
@@ -78,8 +78,6 @@ function processLogin() {
             endLogin();
         }
     });
-    
-    
 }
 
 
@@ -88,7 +86,7 @@ function processLogin() {
 // End the login session
 function endLogin() {
     $("#background").removeClass("hidden");
-    $("#loginOverlay").removeClass("showLogin");
+    $("#loginBox").removeClass("showLogin");
 }
     
 
