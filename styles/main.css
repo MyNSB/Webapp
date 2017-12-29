@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Material+Icons|Roboto:300,400,500,700');
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    background-color: #fff;
+}
+
+#background {
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+    z-index: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit
+}
+
+.material-icons {
+    font-size: 30px;
+}
+
+.pagelink {
+    display:flex;
+    height: 54px;
+    width: 100%;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+}
+
+.headerbutton {
+    float:right;
+    height: 64px;
+    width:64px !important;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+}
+
+.headerbutton:hover, .pagelink:hover {
+    cursor: pointer;
+    background-color: #E8E8E8;
+}
+
+#sub {
+    text-align: right;
+    height:100%;
+    width: 100%;
+}
+
+.selected {
+    color: #1976D2 !important;
+}
+
+.hbutton {
+    font-size: 5vh !important;
+}
+
+.justvert {
+    width:100%;
+    height:100%;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    font-weight: 500;
+}
+
+.centercontent {
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkicon {
+    width: calc(100%/3);
+}
+
+#sidefooter {
+    position: absolute;
+    bottom: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */ /*when you realise opera is just chromium mind blown*/
+}
+
+#content {
+    height: 92.5vh;
+    width: calc(100% - 250px);
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.menubar {
+    color: #212121;
+    height: 92.5vh;
+    width: 250px;
+    float: left;
+    margin-top: 7.5vh;
+    z-index: -1;
+    position: absolute;
+}
+
+#logo {
+    height: 75%;
+    margin: 0 15px 0 10px;
+}
+
+.headerbar {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    height: 7.5%;
+    box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    font-size: 2.75vh;
+    color: #3d3d3d;
+}
+
+#loginBox {
+    z-index: 1;
+    background-color: #fff;
+    height: 50vh;
+    width: 40vh;
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#innerBox {
+    top: calc(100% / 3);
+    height: 100%;
+    position: relative;
+}
+
+#mbutton {
+    cursor: pointer;
+}
+
+#indextitle {
+    color: #676767;
+    font-size: 20px;
+}
+
+#pagetitle {
+    font-weight: 300;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid rgba(0,0,0,0.12);
+    font-size: 2.75vh;
+}
+
+#extraMenu {
+    display:none;
+}
+
+@media screen and (max-width: 650px) {
+    #logOut {
+        display: none;
+    }
+    #toSettings {
+        display: none;
+    }
+    #extraMenu {
+        display: flex;
+    }
+}
+
+.hidden {
+    pointer-events: none;
+    position: absolute;
+    filter: blur(5px) brightness(60%);
+}
+    
