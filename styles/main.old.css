@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,400,500,700|Encode+Sans+Expanded:300');
+@import url('https://fonts.googleapis.com/css?family=Questrial|Material+Icons|Roboto:300,400,500,700');
 html, body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     display: block;
-    height: 100%;
-    width: 100%;
 }
 
 p, h1, h2, h3, a {
@@ -13,36 +11,11 @@ p, h1, h2, h3, a {
     text-decoration: none;
 }
 
-.loginFieldTitle {
-    font-weight: 300;
-    font-size: 2.5vh;
-}
-
-.loginField {
-    height: 5vh;
-    padding: 0 6vh 0 6vh;
-    font-size: 2.25vh;
-    box-sizing: border-box;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid 1px #E0E0E0;
-    border-top: solid 1px #E0E0E0;
-    width: 50vh;
-    margin: 1vh -6vh 2.5vh -6vh;
-}
-
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px white inset
-}
-
 button {
-    height: 7.5vh;
-    font-size: 2.5vh;
-    width: 13.5vh;
     padding: 10px;
     border-radius: 17px;
     background-color: transparent;
-    color: #03A9F4;
+    color: #1976D2;
     border: 2px solid #1976D2;
     -o-transition:.1s;
     -ms-transition:.1s;
@@ -55,6 +28,27 @@ button:hover{
     background-color: #1976D2;
     border-radius: 20px;
     color: #f1f1f1;
+}
+
+#loginContainer {
+    position: absolute;
+    left: 0;
+}
+
+#loginlinks {
+    position: absolute;
+    bottom: 35px;
+}
+
+.loginFields {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    border-top: 1px solid rgba(0,0,0,.12);
+    background-color: #fff;
+    padding: 10px 10px 10px 40px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: -1px;
 }
 
 input:focus, textarea:focus {
@@ -71,28 +65,21 @@ input:focus, textarea:focus {
     left: 0;
     right: 0;
     margin: auto;
+    padding: 100px 2% 5% 35px;
     box-sizing: border-box;
-    height: 70vh;
-    width: 50vh;
-    padding: 7.5vh 6vh 7.5vh 6vh;
+    border-radius: 10px;
+    height: 28vw;
+    width: 21vw;
+    min-height: 442px;
+    min-width: 300px;
 }
 
 #loginTitle {
-    font-family: 'Encode Sans Expanded', sans-serif;
-    width: 100%;
-    text-align: center;
-    font-size: 7vh;
-    color: #03A9F4;
+    margin-bottom: 30px;
 }
 
-#loginSub {
-    height: 4vh;
-    font-family: 'Encode Sans Expanded', sans-serif;
-    text-align: center;
-    font-size:2vh;
-    box-sizing: border-box;
-    padding:0.75vh;
-    margin-bottom: 5vh;
+#submit {
+    margin-top: 136px;
 }
 
 #background {
@@ -104,6 +91,10 @@ input:focus, textarea:focus {
 
 .showLogin {
     display: block !important;
+}
+
+a:visited {
+    color: inherit
 }
 
 .material-icons {
@@ -141,13 +132,6 @@ input:focus, textarea:focus {
     text-align: right;
     height:100%;
     width: 100%;
-}
-
-#errors {
-    font-size: 1.75vh;
-    display:flex;
-    align-items: center;
-    height: 17vh;
 }
 
 .selected {
@@ -204,16 +188,13 @@ input:focus, textarea:focus {
 }
 
 .menubar {
-    color: #424242 !important;
+    color: #212121;
     height: 92.5vh;
     width: 250px;
     float: left;
     margin-top: 7.5vh;
+    z-index: -1;
     position: absolute;
-}
-
-a, a:visited, a:active {
-    color: inherit;
 }
 
 #logo {
@@ -266,31 +247,9 @@ a, a:visited, a:active {
     }
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
-    
-    #loginBox {
-        height: 100%;
-        width:100%
-    }
-    .loginField {
-        width: 100vw;
-    }
-}
-
 .hidden {
     pointer-events: none;
     position: absolute;
     filter: blur(5px) brightness(60%);
 }
-
-table {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  border: 2px solid #000;
-}
-
-td, th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
+    

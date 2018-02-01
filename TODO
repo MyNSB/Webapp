@@ -1,0 +1,13 @@
+Logout button
+    - Add a prompt to confirm logout
+    - Loading animation
+    - Confirm succesful/unsuccessful logout
+    
+Login
+    - Find out why it does not stay logged in after refresh
+    - Improve CSS of login
+    - Animation for login box and submission
+    - Fix blur overlay (White bleed on edges due to background - Make overlay that scales 110% of page to prevent this?)
+    - Fix the sizing of the buttons on the top right
+    - When screen is scaled down to mobile size, top right buttons reduce to one button. Create dropdown menubar
+    - Get admin login working

@@ -1,0 +1,12 @@
+body, html {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.grid-small {
+    width: 25%;
+}
+
+.grid-large {
+    width: 50%;
+}

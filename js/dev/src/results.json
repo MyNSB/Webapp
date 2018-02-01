@@ -1,0 +1,35 @@
+[
+  {  
+    "ArticleID":1,
+    "ArticleName":"July 2014",
+    "ArticleDesc":"The first edition.",
+    "ArticlePublishDate":"2018-01-25T00:00:00Z",
+    "Picture":null,
+    "PictureHeader":null,
+    "ArticleImageUrl":"https://image.isu.pub/160915123059-c92ba270b1041fadda0e23f9923d3ee4/jpg/page_1_thumb_large.jpg",
+    "Link":"https://issuu.com/the4upaper/docs/february_2017",
+    "TypePost":"Article"
+  },
+  {  
+    "ArticleID":2,
+    "ArticleName":"May 2015",
+    "ArticleDesc":"The second edition.",
+    "ArticlePublishDate":"2018-01-25T00:00:00Z",
+    "Picture":null,
+    "PictureHeader":null,
+    "ArticleImageUrl":"https://image.isu.pub/160915122906-262d1ace2c79e3dffcd4b83f0ac7bc60/jpg/page_1_thumb_large.jpg",
+    "Link":"https://issuu.com/the4upaper/docs/february_2017",
+    "TypePost":"Article"
+  },
+  {  
+    "ArticleID":19,
+    "ArticleName":"February 2017",
+    "ArticleDesc":"A special edition for LEAP.",
+    "ArticlePublishDate":"2018-01-25T00:00:00Z",
+    "Picture":null,
+    "PictureHeader":null,
+    "ArticleImageUrl":"https://image.isu.pub/170412135217-68f6caded1bcf2a8064105c5305482c5/jpg/page_1_thumb_large.jpg",
+    "Link":"https://issuu.com/the4upaper/docs/february_2017",
+    "TypePost":"Article"
+  }
+]
