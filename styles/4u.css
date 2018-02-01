@@ -3,10 +3,10 @@ body, html {
     min-height: 100%;
 }
 
-.grid-small {
+.grid-small > img {
     width: 25%;
 }
 
-.grid-large {
+.grid-large > img {
     width: 50%;
 }

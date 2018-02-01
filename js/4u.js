@@ -128,9 +128,7 @@ function newCell(cell) {
 // GET all available articles from the API, and convert each one
 // into a HTML format
 function generateCells() {
-    __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.getJSON("results.json", {}, data => {
-        const content = data["Message"]["Body"][0].slice(2);
-        
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default.a.getJSON("js/backend/backend.php", {}, content => {
         for (let item of content) {
             let cell = new __WEBPACK_IMPORTED_MODULE_3_cell___default.a(item);
             newCell(cell);
