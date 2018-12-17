@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+    <!-- Favicon and Other OS' Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="myNSB">
+    <meta name="application-name" content="myNSB">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#2196F3">
+    <!-- Loader-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="js/dashboard.js" defer></script>
+    <script src="js/common.js" defer></script>
+</head>
+<!--
+    The body should be changed so that there's a login prompt with a semi-transparent background,
+    with dashboard.html dynamically loaded through $().load() behind the login prompt.
+-->
+
+<body>
+        <!-- Header -->
+        <div class="headerbar noselect">
+            <img id="logo" src="assets/logo.png">
+            <div id="title">myNSB</div>
+            <div id="pagetitle">Dashboard</div>
+            <div id="sub">
+                <div id="logOut" class="headerbutton centercontent"><i class="hbutton material-icons">power_settings_new</i></div>
+                <div id="toSettings" class="headerbutton centercontent"><i class="hbutton material-icons">settings</i></div>
+                <div id="extraMenu" class="headerbutton centercontent"><i class="hbutton material-icons">more_vert</i></div>
+            </div>
+        </div>
+        <!-- Menubar -->
+        <div class="menubar noselect">
+            <a class="pagelink refreshpage selected">
+                <div class="linkicon centercontent"><i class="material-icons">dashboard</i></div>
+                <div class="justvert">Dashboard</div>
+            </a>
+            <a class="pagelink refreshpage">
+                <div class="linkicon centercontent"><i class="material-icons">assignment</i></div>
+                <div class="justvert">Timetable</div>
+            </a>
+            <a class="pagelink refreshpage">
+                <div class="linkicon centercontent"><i class="material-icons">event_note</i></div>
+                <div class="justvert">Calendar</div>
+            </a>
+            <a class="pagelink refreshpage">
+                <div class="linkicon centercontent"><i class="material-icons">alarm</i></div>
+                <div class="justvert">Reminders</div>
+            </a>
+            <a class="pagelink refreshpage">
+                <div class="linkicon centercontent"><i class="material-icons">chrome_reader_mode</i></div>
+                <div class="justvert">The 4U Paper</div>
+            </a>
+            <a href="https://web3.northsydbo-h.schools.nsw.edu.au/classery/public/user/home" id="toClassery" class="pagelink">
+                <div class="linkicon centercontent"><i class="material-icons">dns</i></div>
+                <div class="justvert">Classery</div>
+            </a>
+            <a href="https://web1.northsydbo-h.schools.nsw.edu.au/Pages/default.aspx" id="toIntranet" class="pagelink">
+                <div class="linkicon centercontent"><i class="material-icons">home</i></div>
+                <div class="justvert">School Intranet</div>
+            </a>
+            <div id="sidefooter">
+                <img src="assets/VISIONS.png" alt="visions_logo" style="width:100px;padding:20px;">
+            </div>
+        </div>
+        <!-- Overlay -->
+        <div id="content"></div>
+    </div>
+    <!-- Included scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</body>
+
+</html>

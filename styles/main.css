@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Material+Icons|Roboto:300,400,500,700|Encode+Sans+Expanded:300');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons|Open+Sans:100,200,300,400,500,700|Encode+Sans+Expanded:300');
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     display: block;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 p, h1, h2, h3, a {
@@ -16,6 +17,7 @@ p, h1, h2, h3, a {
 .loginFieldTitle {
     font-weight: 300;
     font-size: 2.5vh;
+    text-align: left;
 }
 
 .loginField {
@@ -29,32 +31,34 @@ p, h1, h2, h3, a {
     border-top: solid 1px #E0E0E0;
     width: 50vh;
     margin: 1vh -6vh 2.5vh -6vh;
+    background-color: #f1f1f1;
 }
 
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset
 }
 
-button {
-    height: 7.5vh;
+#loginButton {
+    height: 5.5vh;
     font-size: 2.5vh;
-    width: 13.5vh;
-    padding: 10px;
+    width: 11.5vh;
     border-radius: 17px;
     background-color: transparent;
-    color: #03A9F4;
+    color: #1976D2;
     border: 2px solid #1976D2;
-    -o-transition:.1s;
-    -ms-transition:.1s;
-    -moz-transition:.1s;
-    -webkit-transition:.1s;
-    transition:.1s;
+    -o-transition: .1s;
+    -ms-transition: .1s;
+    -moz-transition: .1s;
+    -webkit-transition: .1s;
+    transition: .1s;
+    font-weight: 300;
+    margin-top: 35px;
 }
 
-button:hover{
+#loginButton:hover{
     background-color: #1976D2;
     border-radius: 20px;
-    color: #f1f1f1;
+    color: #fff;
 }
 
 input:focus, textarea:focus {
@@ -64,7 +68,7 @@ input:focus, textarea:focus {
 #loginBox {
     display: none;
     z-index: 1;
-    background-color: #f1f1f1;
+    background-color: #fff;
     position: absolute !important;
     top: 0;
     bottom: 0;
@@ -75,14 +79,18 @@ input:focus, textarea:focus {
     height: 70vh;
     width: 50vh;
     padding: 7.5vh 6vh 7.5vh 6vh;
+    border-radius: 30px;
+    box-shadow: 0 1px 8px rgba(0,0,0,.3);
+    text-align: center;
 }
 
 #loginTitle {
-    font-family: 'Encode Sans Expanded', sans-serif;
-    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-align: center;
     font-size: 7vh;
-    color: #03A9F4;
+    color: #1976D2;
+    margin-bottom: 4.5vh;
 }
 
 #loginSub {
@@ -162,9 +170,20 @@ input:focus, textarea:focus {
     width:100%;
     height:100%;
     display: flex;
-    font-size: 15px;
+    font-size: 15px !important;
     align-items: center;
-    font-weight: 500;
+    color: inherit;
+    font-family: 'Roboto' sans-serif !important;
+    font-weight: 500 !important;
+}
+
+.circle {
+    position: absolute;
+    display: inline-block;
+}
+
+.wrapper {
+    text-align: center;
 }
 
 .centercontent {
@@ -191,7 +210,7 @@ input:focus, textarea:focus {
        -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */ /*when you realise opera is just chromium mind blown*/
+                                  supported by Chrome and Opera */ /* when you realise opera is just chromium mind blown */
 }
 
 #content {
@@ -199,17 +218,57 @@ input:focus, textarea:focus {
     width: calc(100% - 250px);
     bottom: 0;
     right: 0;
-    position: absolute;
+    position: relative;
+    float: right;
+    top: 7.5vh;
+}
+
+#content:before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    height: 95vh;
+    left: 0;
+    right: 0;
+    z-index: -1;
     box-sizing: border-box;
+    background: url("https://i.imgur.com/HgflTDf.jpg") 50% fixed;
+    background-size: 50%;
+    background-size: cover;
+    position: absolute;
+    background-position: left; 
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+#content:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    height: 95vh;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    box-sizing: border-box;
+    background: rgba(4, 40, 68, 0.85);
+    background-size: 50%;
+    background-size: cover;
+    position: absolute;
+
 }
 
 .menubar {
     color: #424242 !important;
+    background-color: #fff;
     height: 92.5vh;
     width: 250px;
     float: left;
     margin-top: 7.5vh;
     position: absolute;
+    z-index: 0;
 }
 
 a, a:visited, a:active {
@@ -231,6 +290,7 @@ a, a:visited, a:active {
     align-items: center;
     font-size: 2.75vh;
     color: #3d3d3d;
+    z-index: 1;
 }
 
 #mbutton {
@@ -264,6 +324,10 @@ a, a:visited, a:active {
     #extraMenu {
         display: flex;
     }
+}
+
+#message {
+    text-align: center
 }
 
 @media screen and (max-aspect-ratio: 1/1) {

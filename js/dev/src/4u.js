@@ -1,45 +1,45 @@
 import $ from "jquery";
 import bridget from "bridget";
-import Isotope from "isotope";
+import Packery from "packery";
+import Masonry from "masonry";
 import Cell from "cell";
 
 // Bind the Isotope class as a jQuery extension
-$.bridget("isotope", Isotope);
+$.bridget("masonry", Masonry);
 
 // Add functionality from the Isotope library into #articles
 // (Isotope is a library similar to shuffle.js)
-function isotopeArticles() {
-    $("#articles").isotope({
-        itemSelector: ".article",
-        layoutMode: "fitRows"
-    });
-}
+$("#articles").masonry({
+    itemSelector: ".article",
+    columnWidth: 300
+});
 
 // Generate a HTML version of an instance of Cell class
-function newCell(cell) {
-    let cell_html = `<div class="article ${cell.is_large ? "grid-large" : "grid-small"}">
+function cellToHTML(cell) {
+    let cell_html = `<div class="article ${cell.is_large ? "article-large" : ""}">
         <img src="${cell.image}">
-        <div class="title">${cell.title}</div>
-        <div class="desc">${cell.desc}</div>
+        <div class="details">
+            <div class="title">${cell.title}</div>
+            <div class="desc">${cell.desc}</div>
+        </div>
     </div>`;
     
-    console.log(cell_html);
     $("#articles").append(cell_html);
 }
 
 // GET all available articles from the API, and convert each one
 // into a HTML format
 function generateCells() {
-    $.getJSON("js/backend/backend.php", {}, content => {
+    $.get("http://35.189.45.152:8080/api/v1/4U/Get", {}, data => {
+        const content = data["Message"]["Body"][0];
         for (let item of content) {
             let cell = new Cell(item);
-            newCell(cell);
+            cellToHTML(cell);
         }
     });
 }
 
 // Functions to be launched when $(document) is loaded
 $(document).ready(() => {
-    isotopeArticles();
     generateCells();
 });

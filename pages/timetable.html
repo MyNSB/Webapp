@@ -4,37 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Timetables</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/timetable.css">
+    <link rel="stylesheet" href="styles/loader.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <th>Monday A</th>
-            <th>Tuesday A</th>
-            <th>Wednesday A</th>
-            <th>Thursday A</th>
-            <th>Friday A</th>
-        </tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-        <tr>
-            <th>Monday B</th>
-            <th>Tuesday B</th>
-            <th>Wednesday B</th>
-            <th>Thursday B</th>
-            <th>Friday B</th>
-        </tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-        <tr><td>class</td><td>class</td><td>class</td><td>class</td><td>class</td></tr>
-    </table>
-    <script type="text/javascript" src="../js/timetable.js"></script>
+    <div class="wrapper">
+        <div class='circle'>
+                <div class='inner'></div>
+        </div>
+    </div>
+    <div id="header">
+        <button id="switch">Bell Times</button>
+    </div>
+    <div id="timetable"></div>
+    <div id="belltimes"></div>
+    <script type="text/javascript" defer src="js/timetable.js"></script>
 </body>
 </html>

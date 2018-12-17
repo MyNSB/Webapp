@@ -1,0 +1,77 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    height: 100vh;
+    background: url(https://i.imgur.com/HgflTDf.jpg) 50% fixed;
+    background-size: 50%;
+    background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(4, 40, 68, 0.85);
+}
+
+#overlay {
+  z-index: 999;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.8);
+}
+
+#message {
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+}
+
+#overlayContainer {
+  text-align: center;
+}
+
+#loaderSpinner {
+  font-size: 5em;
+  color: #fff;
+  position: static;
+}
+
+#main {
+    background: #fff;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    padding: 2%;
+    border-radius: 7px;
+}
+
+.card {
+    border-radius: 7px;
+    border: 3px solid #ddd;
+}
+
+#profile {
+    padding: 2%;
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+#logo {
+    width: calc(100% / 3);
+    float: left;
+    margin-right: calc(10% / 3 * 2);
+}
+
+#username {
+    font-size:2em;
+}

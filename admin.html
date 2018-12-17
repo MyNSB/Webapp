@@ -1,11 +1,10 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/admin.css">
     <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="/styles/login.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-    <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
-    <script src="/js/login.js" defer></script>
+    <script src="/js/admin.js" defer></script>
     <script src="/js/common.js" defer></script>
     <!-- Favicon and Other OS' Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -20,25 +19,26 @@
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
     <meta name="theme-color" content="#2196F3">
 </head>
-<div id="overlay">
-    <div id="overlayContainer">
-    <span id="loaderSpinner" class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>
-    <div id="message">
-        
+<body>
+    <div id="overlay">
+        <div id="overlayContainer">
+        <span id="loaderSpinner" class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>
+        <div id="message">
+            
+        </div>
+        </div>
     </div>
+    <div id="wrapper">
+        <div id="main">
+            <div id="profile" class="card">
+                <img id="logo" src="/assets/logo.png"></img>
+                <p><div id="username"></div><br><div id="cpTitle">Admin Control Panel</div></p>
+                <br>
+                <button>thicc button amirite</button>
+                <br>
+                <button>probs logout or whatever</button>
+            </div>
+        </div>
     </div>
-</div>
-<div class="wrapper">
-  <form id="login">
-    <p class="title">Log into MyNSB</p>
-    <input id="userID" type="text" placeholder="User ID" autofocus/>
-    <i class="fa fa-user"></i>
-    <input id="password" type="password" placeholder="Password" />
-    <i class="fa fa-key"></i>
-    <button id="submit">
-        Log in
-    </button>
-  </form>
-  <footer><a target="blank" href="https://github.com/Mynsb">MyNSB - NSBHS Visions</a></footer>
-  </p>
-</div>
+    
+</body>

@@ -3,10 +3,33 @@ body, html {
     min-height: 100%;
 }
 
-.grid-small > img {
+.grid-sizer {
     width: 25%;
 }
 
-.grid-large > img {
-    width: 50%;
+.article {
+    display: block;
+    float: left;
+    margin: 10px;
+    width: calc(33% - 20px);
+}
+
+.article-large {
+    width: calc(66% - 20px);
+}
+
+.article img {
+    width: 100%;
+}
+
+.article .details {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 30px);
+    background: rgba(255, 255, 255, 0.5);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
 }
